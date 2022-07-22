@@ -1,12 +1,14 @@
 <template lang="pug">
-  div
-    product-card(
-      v-for="(product, key) in products"
-      :key="key"
-      :title="product.title"
-      :price="product.price"
-      :image-url="product.imageUrl"
-      )
+v-container()
+  v-row()
+    v-col(v-for="(product, key) in products")
+      product-card(
+        :key="key"
+        :title="product.title"
+        :description="product.description"
+        :price="product.price"
+        :image-url="product.imageUrl"
+        )
 </template>
 
 <script>

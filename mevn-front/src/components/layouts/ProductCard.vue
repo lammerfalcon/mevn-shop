@@ -1,12 +1,19 @@
 <template lang="pug">
-.card {{ title }} - {{ price }}
-  img(:src="imageUrl")
+v-card(max-width="300")
+  v-img(:src="imageUrl")
+  v-card-title {{ title }}
+  v-card-subtitle Цена: {{ price }} рубля
+  v-card-subtitle {{ description }}
 </template>
 <script>
 export default {
   name: "ProductCard",
   props: {
     title: {
+      type: String,
+      default: "",
+    },
+    description: {
       type: String,
       default: "",
     },
