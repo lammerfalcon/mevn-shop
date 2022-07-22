@@ -1,0 +1,11 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="111" type="docker-deploy" factoryName="docker-image" server-name="Docker">
+    <deployment type="docker-image">
+      <settings>
+        <option name="imageTag" value="sha256:c8b57c4bf7e3a88daf948d5d17bc7145db05771e928b3b3095ca4590719b5469" />
+        <option name="containerName" value="mongo-mevn" />
+      </settings>
+    </deployment>
+    <method v="2" />
+  </configuration>
+</component>
