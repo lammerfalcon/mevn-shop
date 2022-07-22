@@ -5,7 +5,7 @@
  const { routes } = require('./src/routes/index')
 
 mongoose.connect(
-    'mongodb://localhost:27017/',
+    'mongodb://localhost:27017/mongo',
     {
      useNewUrlParser: true,
      useUnifiedTopology: true
